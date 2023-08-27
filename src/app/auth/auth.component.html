@@ -1,0 +1,19 @@
+<div class="auth-container">
+    <h2>{{ isLogin ? 'Login' : 'Register' }}</h2>
+    <form [formGroup]="authForm" (ngSubmit)="authenticate()">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" formControlName="username" />
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" formControlName="password" />
+        </div>
+        <button type="submit" [disabled]="authForm.invalid">{{ isLogin ? 'Login' : 'Register' }}</button>
+        <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+    </form>
+    <p>
+        {{ isLogin ? 'Don\'t have an account?' : 'Already have an account?' }}
+        <button (click)="toggleMode()">{{ isLogin ? 'Register' : 'Login' }}</button>
+    </p>
+</div>

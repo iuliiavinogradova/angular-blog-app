@@ -1,0 +1,13 @@
+<div class="post-list">
+    <h2>Post List</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+        </tr>
+        <tr *ngFor="let post of posts">
+            <td>{{ post.id }}</td>
+            <td><a (click)="viewPost(post.id)">{{ post.title }}</a></td>
+        </tr>
+    </table>
+</div>
