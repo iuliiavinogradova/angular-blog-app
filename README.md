@@ -1,27 +1,21 @@
 # AngularBlogApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+This project includes:
+
+1. [Authentication Page](./authentication%20page.png)
+2. [A page with a table of posts](./page%20with%20posts.png)(https://jsonplaceholder.typicode.com/posts), from which you can navigate to a post page by id.
+3. [A page for a post by id](./page%20for%20a%20post.png) (https://jsonplaceholder.typicode.com/posts/1), from which you can return to the page with all posts.
+4. A header containing buttons for authentication/logout.
+
+Description:
+
+1. Angular version 16.
+2. Angular Material for UI.
+3. Routing.
+4. Reactive forms for the authentication page, including form validation as needed.
+5. Only authorized users have access to the posts and individual post pages.
+6. Registration user data is stored in localStorage, and retrieved from there during login.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
