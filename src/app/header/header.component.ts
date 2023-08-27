@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  @Input() isLogged!: boolean; // Добавляем ! модификатор
+  @Input() isLogged!: boolean;
 
   constructor(private authService: AuthService, private router: Router) {}
 
@@ -20,9 +20,9 @@ login(): void {
     if (this.isLogged) {
       this.authService.logout();
       this.isLogged = false;
-      this.router.navigate(['/login']); // Redirect to login page after logout
+      this.router.navigate(['/login']); 
     } else {
-      this.router.navigate(['/login']); // Redirect to login page
+      this.router.navigate(['/login']); 
     }
   }
 

@@ -9,8 +9,8 @@ import { Post } from '../models/post.model';
   styleUrls: ['./post-detail.component.css']
 })
 export class PostDetailComponent implements OnInit {
-  postId!: number; // Используем "!" для указания на то, что мы уверены в инициализации
-  post!: Post; // То же здесь
+  postId!: number; 
+  post!: Post; 
 
   constructor(
     private route: ActivatedRoute,

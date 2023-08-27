@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   }
 
   login(): void {
-    this.authService.login('username', 'password'); // Replace with actual login data
+    this.authService.login('username', 'password');
     this.isLogged = true;
   }
 
